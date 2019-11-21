@@ -7,9 +7,11 @@
 111 ==> -1
 531 ==> -1
 '''
-n = 227654
+n = 2017
 s = str(n)
 a = []
+number_str = ''
+number_int = 0
 part_a_to_sort = []
 part_a_before_sort = []
 for i in range(len(s)):
@@ -24,8 +26,12 @@ for i in range(len(a)-2,-1,-1):
     a = part_a_before_sort + part_a_to_sort
     was_break = 1
     break
-  
+
+for i in range(len(a)):
+  number_str = number_str + str(a[i])
+
+number_int = int(number_str)
 if was_break:
-  print(a)
+  print(number_int)
 else:
   print(-1)
