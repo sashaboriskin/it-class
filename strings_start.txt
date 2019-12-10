@@ -1,0 +1,187 @@
+---------------------------------------------D-----------------------------------------------
+
+#include <iostream>
+using namespace std;
+int main(){
+int N;
+int A;
+int X;
+int a[1000];
+int i;
+cin»N;
+for(int i=0; i<N; i++){
+cin»A;
+a[i]=A;
+}
+cin»X;
+int o=0;
+for(int i=0; i<N; i++){
+if(a[i]==X){
+o=o+1;
+}
+}
+cout«o;
+return 0;
+}
+
+
+-------------------------------------E---------------------------------------------
+
+s = input()
+new_s = ''
+for i in range(len(s)):
+  if s[i]!='4' and s[i]!='7':
+    new_s = new_s + s[i]
+
+print(new_s)
+
+--------------------------------F---------------------------------------------------------
+
+#include <iostream> 
+#include <string> 
+using namespace std; 
+ 
+int main() 
+{ 
+string S; 
+char result; 
+getline(cin, S); 
+for (int i = 0; i<S.length(); i++) 
+{ 
+    if (S[i] == 'z')
+    {
+        cout << char('a');
+    } 
+    else 
+    { 
+        result = S[i]; 
+        result = result + 1; 
+        cout << char(result); 
+    } 
+} 
+return 0; 
+}
+
+----------------------------------G---------------------------------------
+
+
+#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+  string s; 
+  string new_s;
+  cin >> s;
+  for (int i=0; i<s.size(); i++) 
+    new_s = new_s + s[i] + '#';
+  new_s.resize(new_s.size() - 1);
+  cout << new_s; 
+}
+
+
+
+
+---------------------------------H--------------------------------------
+
+#include <iostream>
+#include <string>
+
+using namespace std;
+int main() {
+  // 157892 = 3
+  string s;
+  int counter=0;
+  cin >> s;
+  //s = to_string(n);
+
+  for (int i=0; i<s.size(); i++) {
+    if ( s[i] == '0' or s[i] == '6' or s[i] == '9' )
+      counter++;
+    else if (s[i] == '8')
+      counter = counter + 2;
+  }
+  cout << counter; 
+}
+
+
+-------------------------------I--------------------------------------------------
+
+
+#include <iostream>
+#include <string>
+using namespace std;
+int main(){
+string a;
+cin>>a;
+int n=a.length(), k=0, l=0, m=0;
+if (n<12) cout<<"No";
+else{
+for(int i=0; i<n; i++){
+if (a[i]=='0') k++;
+if (a[i]=='1') k++;
+if (a[i]=='2') k++;
+if (a[i]=='3') k++;
+if (a[i]=='4') k++;
+if (a[i]=='5') k++;
+if (a[i]=='6') k++;
+if (a[i]=='7') k++;
+if (a[i]=='8') k++;
+if (a[i]=='9') k++;
+if (a[i]=='a') l++;
+if (a[i]=='b') l++;
+if (a[i]=='c') l++;
+if (a[i]=='d') l++;
+if (a[i]=='e') l++;
+if (a[i]=='f') l++;
+if (a[i]=='g') l++;
+if (a[i]=='h') l++;
+if (a[i]=='i') l++;
+if (a[i]=='j') l++;
+if (a[i]=='k') l++;
+if (a[i]=='l') l++;
+if (a[i]=='m') l++;
+if (a[i]=='n') l++;
+if (a[i]=='o') l++;
+if (a[i]=='p') l++;
+if (a[i]=='q') l++;
+if (a[i]=='r') l++;
+if (a[i]=='s') l++;
+if (a[i]=='t') l++;
+if (a[i]=='u') l++;
+if (a[i]=='v') l++;
+if (a[i]=='w') l++;
+if (a[i]=='x') l++;
+if (a[i]=='y') l++;
+if (a[i]=='z') l++;
+if (a[i]=='A') m++;
+if (a[i]=='B') m++;
+if (a[i]=='C') m++;
+if (a[i]=='D') m++;
+if (a[i]=='E') m++;
+if (a[i]=='F') m++;
+if (a[i]=='G') m++;
+if (a[i]=='H') m++;
+if (a[i]=='I') m++;
+if (a[i]=='J') m++;
+if (a[i]=='K') m++;
+if (a[i]=='L') m++;
+if (a[i]=='M') m++;
+if (a[i]=='N') m++;
+if (a[i]=='O') m++;
+if (a[i]=='P') m++;
+if (a[i]=='Q') m++;
+if (a[i]=='R') m++;
+if (a[i]=='S') m++;
+if (a[i]=='T') m++;
+if (a[i]=='U') m++;
+if (a[i]=='V') m++;
+if (a[i]=='W') m++;
+if (a[i]=='X') m++;
+if (a[i]=='Y') m++;
+if (a[i]=='Z') m++;
+}
+if (k>0 and l>0 and m>0) cout<<"Yes";
+else cout<<"No";
+}
+}
+--------------------------------------------------------------------------
