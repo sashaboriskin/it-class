@@ -1,0 +1,15 @@
+n = int(input()) #number of types
+a = [] # cakes in type
+max_sum = 0 
+z = 0 # кол-во типов которые нужно вести на ярмарку
+for i in range(n):
+  a.append(int(input()))
+a.sort()
+while len(a) > 0:
+  if (a[0] * len(a)) > max_sum:
+    max_sum = a[0] * len(a)
+    z = len(a)
+  a.pop(0)  
+
+print(z, int(max_sum/z))
+
