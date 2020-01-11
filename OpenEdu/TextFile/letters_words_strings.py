@@ -16,8 +16,8 @@ for line in fin:
     array_of_words = line.split()
     for word in array_of_words:
         words+=1
-        array_of_letters = word.split()
-        for letter in array_of_words:
+        #array_of_letters = word.split()
+        for letter in word:
             if letter.isalpha() == True:
                 letters+=1
 
@@ -30,7 +30,7 @@ fin.close()
 #answer -
 '''
 Input file contains:
-93203 letters
+44473 letters
 11000 words
 1000 lines
 '''
