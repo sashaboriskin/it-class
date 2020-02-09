@@ -16,10 +16,12 @@ for symb in txt:
         d[symb] = 1
 
 newdic = d.copy()
+
 for key in newdic:
     if key in string_of_bad_letters:
         del d[key]
     elif key in array_of_bad_letters:
         del d[key]
 
-print(d)
+for key, value in sorted(d.items(), key=lambda para: para[1]):
+    print(key, ' ', value, sep='')
