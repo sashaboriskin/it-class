@@ -23,5 +23,5 @@ for key in newdic:
     elif key in array_of_bad_letters:
         del d[key]
 
-for key, value in sorted(d.items(), key=lambda para: para[1]):
+for key, value in sorted(d.items(), key=lambda para: para[1], reverse=True):
     print(key, ' ', value, sep='')
