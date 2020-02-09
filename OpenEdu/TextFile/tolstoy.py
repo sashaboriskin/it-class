@@ -1,3 +1,4 @@
+#encoding='cp1251' - ?
 txt = ''
 for i in range(1, 3):
     fin = open('Толстой Лев Николаевич. Война и мир. Книга ' + str(i) + '.txt', 'r')
@@ -14,13 +15,11 @@ for symb in txt:
     else:
         d[symb] = 1
 
-
-for key in d:
+newdic = d.copy()
+for key in newdic:
     if key in string_of_bad_letters:
+        del d[key]
+    elif key in array_of_bad_letters:
         del d[key]
 
 print(d)
-'''
-for key, value in d.items():
-    print(key, ' ', value, sep='')
-'''
